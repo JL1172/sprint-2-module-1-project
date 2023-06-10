@@ -1,0 +1,208 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+    <!DOCTYPE html>
+    <html>
+
+      <head>
+
+        <title>Module 4 Project</title>
+
+        <style>
+          html {
+            background-color:rgb(240, 225, 208);
+          }
+
+          #firstdiv {
+            border: 5px solid black;
+            padding: 5%;
+            color: transparent;
+            background: #4b4b4b;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+          }
+
+          #navDiv {
+            margin-top: 5%;
+            font-family: Arial, Helvetica, sans-serif
+          }
+
+          .first-heading {
+            font-size: 40px;
+          }
+
+          #earlyLife {
+            border: 5px solid black;
+            padding: 2%;
+            margin-top: 5%;
+            font-family: Arial, Helvetica, sans-serif
+          }
+          .early-life {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif
+          }
+
+          .notable-works {
+            padding-left:1%;
+            margin-top: 5%;
+            border: 5px solid black;
+            
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif
+            
+          }
+
+          #image {
+            border-radius: 5%;
+          }
+
+          #secondImage {
+            margin-top: 2%;
+            width: 40%;
+            margin-left: 1%;
+            border-radius: 5%;
+            
+          }
+
+          #formDiv {
+            margin-top: 5%;
+            border: 5px solid black;
+            padding-left: 1%;
+            padding-bottom: 1%;
+            font-family: Arial, Helvetica, sans-serif
+          }
+
+          #footer {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 2%;
+            margin-left: 40%;
+          }
+
+
+        </style>
+
+      </head>
+
+      <body>
+        <div id="firstdiv">
+          <h1>Frederic Chopin</h1>
+              <p><em>The Life of Frederic Chopin</em></p>
+
+        </div>
+
+        <div id = "navDiv">
+          <nav>
+            <ul>
+              <li><a href = "#earlyLife">Introduction</a></li>
+              <li><a href = "#secondImage">Notable Works</a></li>
+              <li><a href = "#formDiv">Our Weekly Newsletter</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        
+
+        <div id="earlyLife">
+          <section>
+            <h1 class = "early-life">Brief History</h1>
+            <aside>
+              <img id = "image" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdys-uwkGtDuUSPPNS2zSj5XjJ8Z_0UELsQ&usqp=CAU" alt = "Portrait of Chopin"/>
+              <h2>Chopin's Early Life</h2>
+              <p><strong>Frederic Chopin</strong> was born on March 1, 1810 in Poland.
+              He started to play the piano at age 6, <br>
+              which was fitting for him because his artistic inclination had always been apparent even from<br>
+              a young age.</p>
+              <p>Chopin made an appearance at a charity concer, which was his first ever at age 8. Only three<br>
+              years later, he performed for the Russian tsar Alexander I. His notoriety only increased by the<br>
+              day as a child prodigy.</p>
+              <h3><em>Early Works</em></h3>
+              <p><strong>His</strong> first composition was Polonaise in G Minor, and it was first played in a parade for a grand<br>
+                duke's military band. He went on to create other <a href = "https://en.wikipedia.org/wiki/Polonaise" target = "_blank" >Polonaises</a>, <a href = "https://en.wikipedia.org/wiki/Mazurka" target = "_blank">mazurkas</a>,
+                <a href = "https://en.wikipedia.org/wiki/Variation_(music)">variation</a>, and <a href = "https://en.wikipedia.org/wiki/%C3%89cossaise#:~:text=The%20%C3%89cossaise%20(in%20French%2C%20%22,the%20beginning%20of%20the%2019th." target = "_blank">ecossaises.</a>
+                <br>He went on to study music at the Warsaw Conservatory of Music at age 16.</p>
+            </aside>
+          </section>
+        </div><br>
+
+        <div id = "Best Works">
+          <section class = "notable-works">
+          <h1>Chopin's Most Notable Works</h1>
+          <aside>
+            <img id = "secondImage" src="https://api.culture.pl/sites/default/files/styles/1920_auto/public/2021-01/chopin_portret_en.jpg?itok=NBgfCdJw" alt= "Image of Chopin Playing the Piano"/>
+          </aside>
+              <ul>
+                  <li>Ballade No. 1 in G-Minor Op 23</li>
+                  <li>Fantaisie-Impromptu</li>
+                  <li>Nocturn No. 20 in C-Sharp Minor</li>
+              </ul><br>
+              <article><em><strong>Additional Info</strong></em>
+              <p>Fun fact about Chopin's Fantaisie-Impromptu piece;<br> he requested that it would never be released posthumously.<br>
+                 Can you imagine all the pieces we would not have if his<br> wishes
+                  were entirely respected?</p>
+              </article>
+            </section>
+            <!-- <img id = "secondImage" src="https://api.culture.pl/sites/default/files/styles/1920_auto/public/2021-01/chopin_portret_en.jpg?itok=NBgfCdJw" alt= "Image of Chopin Playing the Piano"/> -->
+        </div>
+
+        <div id = "formDiv">
+          <section>
+          <h1>Interested in all things Piano?</h1>
+          <p id = "weeklyNews">Subscribe to this <a href = "https://www.britannica.com/biography/Frederic-Chopin" target = "_blank">weekly newsletter</a> below which gives an interesting perspective on famous composers throughout the different musical eras.</p>
+          
+          <form action="" method = "get">
+            <label for ="userEmail">Email:</label>
+            <input type="email" id="userEmail" name = 'userEmail'><br><br>
+            <label for = "question">Did you enjoy this reading?</label><br>
+            <label for = "yes">Yes</label>
+            <input type ="checkbox" id = "yes" name = "yes">
+            <label for = "no">No</label>
+            <input type = "checkbox" id = "no" name = "no">
+          </form>
+        </div>
+        
+        <div id = "footer">
+            <footer>
+               <p>Author: Jacob Lang</p>
+               <p><a href = "mailto:jacoblang72@icloud.com">Contact</a></p>
+               <p><a href = "#firstdiv">Back to top</a></p>
+            </footer>
+        </div>
+
+  
+      
+
+      </body>
+
+    </html>
